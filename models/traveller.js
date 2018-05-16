@@ -66,17 +66,4 @@ Traveller.prototype.getUniqueModesOfTransport = function () {
   return uniqueTransportArray;
 };
 
-// const getEvens = function(numbersArray) {
-//   const evensArray = [];
-//   numbersArray.forEach((number) => {
-//     if (number % 2 === 0){
-//       evensArray.push(number);
-//     }
-//   });
-//   return evensArray;
-// }
-//
-// console.log(getEvens(numbersArray));
-
-
 module.exports = Traveller;
