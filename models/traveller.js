@@ -16,13 +16,6 @@ Traveller.prototype.getJourneyEndLocations = function() {
   return endLocations;
 };
 
-// Cinema.prototype.findFilmsByGenre = function(genre){
-//   const foundFilms = this.films.filter((singleFilm) => {
-//     return singleFilm.genre === genre;
-//   })
-//   return foundFilms;
-// }
-
 // Cinema.prototype.getListOfTitles = function(){
 //   const listOfTitles = this.films.map((singleFilm) => {
 //     return singleFilm.title;
@@ -31,12 +24,25 @@ Traveller.prototype.getJourneyEndLocations = function() {
 // }
 
 Traveller.prototype.getModesOfTransport = function () {
-
+  const transportArray = this.journeys.map((singleJourney) => {
+    return singleJourney.transport;
+  })
+  return transportArray;
 };
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
-
+  const journeysArray = this.journeys.filter((singleJourney) => {
+        singleJourney.transport === transport;
+  });
+  return journeysArray;
 };
+
+// Cinema.prototype.findFilmsByGenre = function(genre){
+//   const foundFilms = this.films.filter((singleFilm) => {
+//     return singleFilm.genre === genre;
+//   })
+//   return foundFilms;
+// }
 
 Traveller.prototype.getJourneysByMinDistance = function (minDistance) {
 
