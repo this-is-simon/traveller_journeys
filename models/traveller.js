@@ -32,7 +32,7 @@ Traveller.prototype.getModesOfTransport = function () {
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
   const journeysArray = this.journeys.filter((singleJourney) => {
-        singleJourney.transport === transport;
+    return singleJourney.transport === transport;
   });
   return journeysArray;
 };
