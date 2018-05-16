@@ -14,7 +14,7 @@ Traveller.prototype.getJourneyEndLocations = function() {
     return singleJourney.endLocation;
   });
   return endLocations;
-}
+};
 
 // Cinema.prototype.findFilmsByGenre = function(genre){
 //   const foundFilms = this.films.filter((singleFilm) => {
@@ -29,10 +29,6 @@ Traveller.prototype.getJourneyEndLocations = function() {
 //   });
 //   return listOfTitles;
 // }
-
-Traveller.prototype.getJourneyEndLocations = function () {
-
-};
 
 Traveller.prototype.getModesOfTransport = function () {
 
