@@ -52,7 +52,10 @@ Traveller.prototype.getJourneysByMinDistance = function (minDistance) {
 };
 
 Traveller.prototype.calculateTotalDistanceTravelled = function () {
-
+  const grandTotal = this.journeys.reduce((total, distance) => {
+    return total += distance.distance;
+  }, 0);
+  return grandTotal;
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
